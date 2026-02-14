@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+     <style>
+        .ust-menu {display: flex; justify-content: space-between; padding: 20px; color: white;}
+        .ilkYazi {font-weight: bold; letter-spacing: 5px; padding: 10px;}
+        .menu-yazi{letter-spacing: 4px; font-weight: bold; padding: 10px;}
+        .ana-alan{width: 60%; margin: auto; margin-top: 150px;}
+        .ana-alan h1{font-size: 48px; margin-bottom: 20px; color: white; margin-left: 20px;}
+        .cizgi{width: 100%; border: 1px solid white;}
+        .buton{display: inline-block; padding: 15px 25px; border: 2px solid white; text-decoration: none; color: white; letter-spacing: 2px; margin-left: 20px;}
+        .buton:hover {/*yeni öğrendim border-color ı*/ border-color: lightseagreen; color: lightseagreen; transition: 1s all;}
+
+
+
+        .resim-kutu {position: relative; display: block; height: 450px; text-decoration: none;}
+        .resim { width: 100%; height: 100%; object-fit: cover; /*chatgpt*/}
+        .renk-katman /*chatgpt*/ {position: absolute; inset: 0; transition: 0.4s;}
+        .resim-kutu:hover .renk-katman {opacity: 0;}
+        .yazi-alani /*chatgpt*/ {position: absolute; inset: 0; z-index: 2; color: white; display: flex; flex-direction: column; justify-content: center; padding-left: 40px;}
+        .turuncu {background-color: rgba(240, 180, 120, 0.88);}
+        .sari {background-color: rgba(245, 220, 140, 0.88);}
+        .yesil {background-color: rgba(150, 200, 170, 0.88);}
+        .lacivert {background-color: rgba(60, 90, 140, 0.88);}
+        .acik-mavi{background-color: rgba(100, 180, 220, 0.88);}
+        .mor-acik{background-color: rgba(130, 120, 200, 0.8);}
+        .yazi-alani h2{font-size: 32px;}
+        .yazi-alani span{font-size: 12px;letter-spacing: 3px;}
+
+
+
+        .bilgi-alani{background-color: #2e3550; color: white; padding: 80px 120px;}
+        .bilgi-alani h2{font-size: 32px; margin-bottom: 10px; margin-left: 200px;}
+        .cizgi-2{width: 200px; height: 2px; background-color: black; margin-bottom: 20px; margin-top: 20px; margin-left: 200px;}
+        .bilgi-alani p{width: 900px; line-height: 1.5; font-size: 18px; margin-left: 200px;}
+        .buton-2{display: inline-block; margin-top: 20px; padding: 12px 28px; border: 2px solid black; color: white; text-decoration: none; letter-spacing: 2px; font-size: 15px; margin-left: 200px;}
+        .buton-2:hover {color: lightblue; border-color: lightblue; transition: 1s all;}
+
+
+
+        .iletisim-alani{border-bottom: 1px solid rgba(255,255,255,0.2);}
+        .sol-taraf{padding: 60px; border-right: 1px solid rgba(255,255,255,0.2);}
+        .sag-taraf .bilgi{padding: 40px; border-bottom: 1px solid rgba(255,255,255,0.2);}
+        .form-grup{margin-bottom: 30px;}
+        .ust-yazi{letter-spacing: 3px; margin-bottom: 8px;}
+        input,textarea{width: 100%; padding: 15px; background-color: #282d49; border: transparent;}
+        .butonlar,button{border: transparent; display: inline; margin-right: 20px; letter-spacing: 2px; width: 150px; height: 60px;}
+    </style>
+</head>
+<body style="background-image: url(image/NEONKARA.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;">
+    <!-- ÜST MENÜ -->
+    <div class="ust-menu">
+        <div class="ilkYazi">
+            <a href="" style="text-decoration: none; color: white;"><span style="background-color: burlywood; color: black; padding: 5px;">FORTY</span> <span>BY HTML5 UP</span></a>
+        </div>
+        <div class="menu-yazi">
+            <a href="" style="text-decoration: none; color: white;">MENU <i class="fa-solid fa-bars"></i></a>
+        </div>
+    </div>
+
+    <!-- ANA ALAN -->
+    <div class="ana-alan" style="margin: 200px;">
+        <h1>Hi, my name is Forty</h1>
+         <div class="cizgi" style="margin: 20px;"></div>
+        <p style="color: white; font-size: 20px; letter-spacing: 2px; margin-left: 20px;">
+           A responsive site template designed by HTML5 UP
+           <br>
+            and released under the Creative Commons.
+        </p>
+        <a href="" class="buton">
+            GET STARTED →
+        </a>
+    </div>  
+    
+
+     <div class="container-fluid p-0">
+        <div class="row g-0">
+            <!--1.kat-->
+            <div class="col-5">
+                <a href="" class="resim-kutu">
+                    <img src="image/4kbir.webp" class="resim">
+                    <div class="renk-katman acik-mavi"></div>
+                    <div class="yazi-alani">
+                        <h2>Aliquam</h2>
+                        <div style="border: 1px solid black; width: 30%; margin-top: 15px; margin-bottom: 15px;"></div>
+                        <span>IPSUM DOLOR SIT AMET</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-7">
+                <a href="" class="resim-kutu">
+                    <img src="image/4kAY.jpg" class="resim">
+                    <div class="renk-katman mor-acik"></div>
+                    <div class="yazi-alani">
+                        <h2>Tempus</h2>
+                        <div style="border: 1px solid black; width: 30%; margin-top: 15px; margin-bottom: 15px;"></div>
+                        <span>FEUGIAT AMET TEMPUS</span>
+                    </div>
+                </a>
+            </div>
+
+             <!--2.kat-->
+            <div class="col-7">
+                <a href="" class="resim-kutu">
+                    <img src="image/uzay2.jpeg" class="resim">
+                    <div class="renk-katman turuncu"></div>
+                    <div class="yazi-alani">
+                        <h2>Tempus</h2>
+                        <div style="border: 1px solid black; width: 30%; margin-top: 15px; margin-bottom: 15px;"></div>
+                        <span>FEUGIAT AMET TEMPUS</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-5">
+                <a href="" class="resim-kutu">
+                    <img src="image/UZAY4.jpg" class="resim">
+                    <div class="renk-katman sari"></div>
+                    <div class="yazi-alani">
+                        <h2>Aliquam</h2>
+                        <div style="border: 1px solid black; width: 30%; margin-top: 15px; margin-bottom: 15px;"></div>
+                        <span>IPSUM DOLOR SIT AMET</span>
+                    </div>
+                </a>
+            </div>
+
+             <!--3.kat-->
+            <div class="col-5">
+                <a href="" class="resim-kutu">
+                    <img src="image/UZAY5.jpg" class="resim">
+                    <div class="renk-katman lacivert"></div>
+                    <div class="yazi-alani">
+                        <h2>Aliquam</h2>
+                        <div style="border: 1px solid black; width: 30%; margin-top: 15px; margin-bottom: 15px;"></div>
+                        <span>IPSUM DOLOR SIT AMET</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-7">
+                <a href="" class="resim-kutu">
+                    <img src="image/ŞATO1.jpeg" class="resim">
+                    <div class="renk-katman yesil"></div>
+                    <div class="yazi-alani">
+                        <h2>Tempus</h2>
+                        <div style="border: 1px solid black; width: 30%; margin-top: 15px; margin-bottom: 15px;"></div>
+                        <span>FEUGIAT AMET TEMPUS</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+     <div class="bilgi-alani">
+        <h2>Massa libero</h2>
+        <div class="cizgi-2"></div>
+        <p>
+            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero.Mauris aliquet magna magna sed nunc rhoncus pharetra.
+            Pellentesque condimentum sem. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
+            Nullam et orci eu lorem consequat tincidunt.Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.
+        </p>
+        <a href="" class="buton-2">
+            GET STARTED →
+        </a>
+    </div>
+
+
+    <div class="container-fluid iletisim-alani" style=" background: #242943; color: white;">
+    <div class="row g-0">
+        <!-- SOL TARAF -->
+        <div class="col-7 sol-taraf">
+            <form action="" method="get">
+                <div class="row">
+                    <div class="col-6 form-grup">
+                        <div class="ust-yazi">NAME</div>
+                        <input type="text">
+                    </div>
+                    <div class="col-6 form-grup">
+                        <div class="ust-yazi">EMAIL</div>
+                        <input type="email">
+                    </div>
+                </div>
+                <div class="form-grup">
+                    <div class="ust-yazi">MESSAGE</div>
+                    <textarea name="" id="" style="height: 200px;">
+
+                    </textarea>
+                </div>
+
+                <div class="butonlar">
+                   <button type="submit" style="background-color: black; color: white;">SEND MESSAGE</button>
+                   <button type="reset" style="background: none; border: 1px solid black; color: white;">CLEAR</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- SAĞ TARAF -->
+        <div class="col-5 sag-taraf">
+            <div class="bilgi">
+                <div style="border-radius: 50px; border: 1px solid black; background-color: black; width: 30px; height: 30px; margin-top: 20px; display: block;">
+                    <i class="fa-regular fa-envelope" style="margin-left: 6px; margin-top: 6px;"></i>
+                </div>
+                <h4>Email</h4>
+                <p>information@untitled.tld</p>
+            </div>
+            <div class="bilgi">
+                <div style="border-radius: 50px; border: 1px solid black; background-color: black; width: 30px; height: 30px; margin-top: 20px; display: block;">
+                     <i class="fa-solid fa-phone" style="margin-left: 6px; margin-top: 6px;"></i>
+                </div>
+                <h4>Phone</h4>
+                <p>(000) 000-0000 x12387</p>
+            </div>
+            <div class="bilgi">
+                <div style="border-radius: 50px; border: 1px solid black; background-color: black; width: 30px; height: 30px; margin-top: 20px; display: block;">
+                    <i class="fa-regular fa-envelope" style="margin-left: 6px; margin-top: 6px;"></i>
+                </div>
+                <h4>Address</h4>
+                <p>
+                    1234 Somewhere Road #5432<br>
+                    Nashville, TN 00000<br>
+                    United States of America
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
